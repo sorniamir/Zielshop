@@ -9,9 +9,14 @@
     <!-- Vazirmatn Font for beautiful Persian typography -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #050505;
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    /* بکگراند مشکی + گرادیان خیلی ظریف */
+    background:
+        radial-gradient(circle at 20% 0%, rgba(148, 163, 184, 0.05) 0, transparent 40%),
+        radial-gradient(circle at 80% 100%, rgba(56, 189, 248, 0.06) 0, transparent 45%),
+        linear-gradient(180deg, #020617 0%, #02040a 50%, #020617 100%);
+    color: #e5e7eb;
         }
         .luxury-border {
             border-color: rgba(220, 38, 38, 0.2);
@@ -20,11 +25,25 @@
             border-color: rgba(220, 38, 38, 0.8);
         }
     </style>
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.3;
+    background-image:
+        linear-gradient(to right, rgba(15, 23, 42, 0.7) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.7) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mix-blend-mode: soft-light;
+    z-index: -1;
+}
+
 </head>
 <body class="text-gray-200 min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="border-b border-neutral-900 py-6 px-4 backdrop-blur-md sticky top-0 z-50 bg-[#050505]/80">
+<header class="border-b border-neutral-800 py-6 px-4 backdrop-blur-md sticky top-0 z-50 bg-black/40">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold tracking-wider text-white">ZIEL<span class="text-red-600">SHOP</span></h1>
             <a href="https://t.me/sorniam" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg shadow-red-600/20">
@@ -50,7 +69,7 @@
             
             <!-- Item 1 -->
 <!-- =================== کارت محصول اول (با اسلایدر) =================== -->
-<div class="bg-neutral-950 rounded-xl overflow-hidden border luxury-border transition-all duration-300 flex flex-col justify-between">
+<div class="bg-black/60 rounded-xl overflow-hidden border luxury-border transition-all duration-300 flex flex-col justify-between">
     <div>
         <!-- شروع اسلایدر محصول -->
         <div id="product-carousel-1" class="relative w-full" data-carousel="slide">
