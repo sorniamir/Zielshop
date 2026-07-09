@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری نمونه کارها | شخصی و لوکس</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vazirmatn Font for beautiful Persian typography -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #050505;
+        }
+        .luxury-border {
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        .luxury-border:hover {
+            border-color: rgba(220, 38, 38, 0.8);
+        }
+    </style>
+</head>
+<body class="text-gray-200 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-neutral-900 py-6 px-4 backdrop-blur-md sticky top-0 z-50 bg-[#050505]/80">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-white">ZIEL<span class="text-red-600">SHOP</span></h1>
+            <a href="https://t.me/sorniam" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg shadow-red-600/20">
+                سفارش پروژه (تلگرام)
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl w-full mx-auto px-4 py-16 flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="text-center mb-20">
+            <span class="text-xs uppercase tracking-widest text-red-500 font-bold">طراحی و توسعه خلاقانه</span>
+            <h2 class="text-4xl md:text-5xl font-black text-white mt-3 mb-6 leading-tight">نمایشگاه آثار و خدمات دیجیتال</h2>
+            <p class="text-neutral-400 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
+                خیلی خوش اومدی رفیق! اینجا تو زیل شاپ فقط طرح سفارش نمیدی، ما مطابق سلیقه ات برات بهترین ست ممکن رو طراحی میکنیم.
+            </p>
+        </section>
+
+        <!-- ZielShop Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Item 1 -->
+<!-- =================== کارت محصول اول (با اسلایدر) =================== -->
+<div class="bg-neutral-950 rounded-xl overflow-hidden border luxury-border transition-all duration-300 flex flex-col justify-between">
+    <div>
+        <!-- شروع اسلایدر محصول -->
+        <div id="product-carousel-1" class="relative w-full" data-carousel="slide">
+            <!-- Wrapper برای عکس‌ها -->
+            <div class="relative h-96 overflow-hidden">
+                <!-- عکس ۱ -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="01.webp" class="w-full h-full object-cover" alt="عکس اول محصول">
+                </div>
+                <!-- عکس ۲ -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="02.webp" class="w-full h-full object-cover" alt="عکس دوم محصول">
+                </div>
+                <!-- عکس ۳ -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="03.webp" class="w-full h-full object-cover" alt="عکس سوم محصول">
+                </div>
+                <!-- عکس ۴ -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="04.webp" class="w-full h-full object-cover" alt="عکس چهارم محصول">
+                </div>
+            </div>
+            <!-- دکمه‌های چپ و راست -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 group-focus:ring-2 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 group-focus:ring-2 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- پایان اسلایدر -->
+
+        <div class="p-6">
+            <span class="text-xs text-red-500 font-semibold">شلوار</span>
+            <h3 class="mt-2 text-xl font-bold text-white">Dead Ghost</h3>
+            <p class="mt-3 text-sm text-neutral-400">این شلوار بر اساس روایتی از جنس مردگان شب و شوالیه‌های تاریکی طراحی شده، مناسب افراد با سلیقه و خاص پسند.</p>
+        </div>
+    </div>
+    <div class="p-6 pt-0">
+        <a href="#" class="inline-flex items-center text-red-500 font-semibold hover:text-red-400 transition-colors">
+            سفارش مشابه
+            <svg class="w-4 h-4 ms-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </a>
+    </div>
+</div>
+
+
+            <!-- Item 2 -->
+
+        </section>
+
+        <!-- CTA Section -->
+        <section class="mt-24 bg-neutral-950 rounded-2xl p-8 md:p-12 text-center border border-neutral-900">
+            <h3 class="text-2xl font-bold text-white mb-4">پروژه اختصاصی خودتان را سفارش دهید</h3>
+            <p class="text-neutral-400 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
+                آیا ایده یا طرحی در ذهن دارید؟ همین حالا در تلگرام پیام دهید تا در سریع‌ترین زمان و با بهترین کیفیت آن را برای شما پیاده‌سازی کنم.
+            </p>
+            <a href="https://t.me/sorniam" target="_blank" class="inline-flex items-center gap-2 bg-white hover:bg-neutral-200 text-black px-8 py-3 rounded-full text-sm font-bold transition-all duration-300">
+                ارتباط در تلگرام
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 py-8 px-4 text-center text-xs text-neutral-600">
+        <p>© 2026 کلیه حقوق محفوظ است.</p>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
